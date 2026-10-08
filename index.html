@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gui Leiros — Festa das Crianças 2.0 | 11/10 10H</title>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Luckiest+Guy&family=Fredoka:wght@500;600;700&family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--y:#ffeb00;--p:#ff1744;--b:#2196f3;--g:#4caf50}
+body{font-family:'Inter',sans-serif;background:#0b0b0e;color:#fff;display:flex;justify-content:center;padding:16px 10px;min-height:100vh;overflow-x:hidden;
+background-image:radial-gradient(600px 300px at 20% 0%,#2b2b33,transparent),radial-gradient(500px 300px at 90% 10%,#3a2415,transparent)}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:50}
+.poster{width:100%;max-width:520px;background:linear-gradient(180deg,#17171c,#0a0a0c 30%);border-radius:22px;border:2px solid #2a2a30;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.7);position:relative;perspective:1200px}
+.top{text-align:center;padding:14px 70px 8px;position:relative;background:linear-gradient(#1e1e24,#0a0a0c)}
+.top small{letter-spacing:.45em;font-size:10px;font-weight:800;color:#ddd}
+.top h1{font-family:'Titan One';font-size:30px;text-shadow:3px 3px 0 #000}
+.top p{font-size:8px;letter-spacing:.14em;color:#bbb;font-weight:700}
+.pole{position:absolute;top:10px;width:30px;height:86px;border-radius:14px;border:2px solid #d9a441;background:repeating-linear-gradient(25deg,#d32f2f 0 8px,#fff 8px 16px,#1a4fc3 16px 24px,#fff 24px 32px);animation:pole 2s linear infinite;background-size:100% 64px}
+@keyframes pole{to{background-position:0 64px}}
+.hero{text-align:center;padding:10px 12px 0;position:relative}
+.festa{font-family:'Luckiest Guy';font-size:62px;line-height:.9;transform-style:preserve-3d}
+.festa span{display:inline-block;animation:float 2.2s ease-in-out infinite;text-shadow:4px 4px 0 #000,-2px -2px 0 #000}
+.festa span:nth-child(1){color:#ff3b3b}.festa span:nth-child(2){color:#2196f3;animation-delay:.15s}.festa span:nth-child(3){color:#ffeb3b;animation-delay:.3s}.festa span:nth-child(4){color:#ff4081;animation-delay:.45s}.festa span:nth-child(5){color:#ff5722;animation-delay:.6s}
+@keyframes float{0%,100%{transform:translateY(0) rotateZ(-2deg)}50%{transform:translateY(-8px) rotateZ(2deg)}}
+.das{font-family:'Fredoka';font-weight:700;font-size:22px;text-shadow:2px 2px 0 #000}
+.criancas{font-family:'Luckiest Guy';font-size:52px;text-shadow:4px 4px 0 #000}
+.date3d{margin:10px 18px;background:var(--y);color:#000;border-radius:16px;padding:10px;transform:rotate(-2deg);box-shadow:5px 5px 0 #000, 0 10px 30px rgba(255,235,0,.25);transition:transform .3s;cursor:pointer}
+.date3d:hover{transform:rotate(0) scale(1.03)}
+.date3d b{font-family:'Titan One';font-size:48px;color:var(--p);-webkit-text-stroke:1.5px #000;display:block;line-height:1}
+.time3d{background:var(--p);color:var(--y);font-family:'Titan One';font-size:54px;border-radius:14px;padding:0 18px;display:inline-block;border:3px solid #000;box-shadow:0 8px 0 #000;transform:rotate(1deg)}
+.kids{display:flex;gap:12px;padding:12px}
+.kid-card{flex:1;background:linear-gradient(180deg,#24242c,#121216);border:2px solid #333;border-radius:18px;padding:12px 8px;text-align:center;transform-style:preserve-3d;transition:transform .15s;position:relative;box-shadow:0 12px 24px rgba(0,0,0,.5)}
+.kid-card:hover{border-color:var(--y)}
+.kid-face{font-size:84px;line-height:1;transform:translateZ(40px);filter:drop-shadow(0 8px 8px rgba(0,0,0,.6));animation:bounce 2.5s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:translateZ(40px) translateY(0)}50%{transform:translateZ(40px) translateY(-8px)}}
+.kid-card h3{font-family:'Luckiest Guy';margin:6px 0 2px;font-size:18px}
+.kid-card p{font-size:11px;color:#bbb;font-weight:600}
+.kid-card button{margin-top:8px;border:0;background:var(--y);font-weight:800;border-radius:10px;padding:8px 10px;cursor:pointer;box-shadow:0 4px 0 #000;transform:translateZ(20px)}
+.kid-card button:active{transform:translateZ(20px) translateY(3px);box-shadow:0 1px 0 #000}
+.speech{position:absolute;top:-14px;left:50%;transform:translateX(-50%) translateZ(50px);background:#fff;color:#000;font-size:11px;font-weight:800;border-radius:12px;padding:4px 10px;white-space:nowrap;opacity:0;transition:.3s;pointer-events:none}
+.kid-card.talk .speech{opacity:1;top:-28px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px}
+.flip{perspective:800px;cursor:pointer;height:132px}
+.flip-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.8,.3,1.2)}
+.flip.flipped .flip-inner{transform:rotateY(180deg)}
+.flip-front,.flip-back{position:absolute;inset:0;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px;backface-visibility:hidden;border:2px solid #000;box-shadow:0 6px 0 #000}
+.flip-front{background:#1b1b21;border-color:#ffbf00}
+.flip-front i{font-size:38px;font-style:normal;transform:translateZ(20px)}
+.flip-front span{font-size:10px;font-weight:800;margin-top:4px;text-transform:uppercase}
+.flip-back{transform:rotateY(180deg);background:var(--y);color:#000;font-size:11px;font-weight:700;line-height:1.3}
+.copy{text-align:center;padding:6px 18px;font-weight:800}
+.copy em{color:var(--y);font-style:normal}
+.copy strong{color:#ff6e9c}
+.map-box{margin:12px;background:linear-gradient(180deg,#e8c97a,#d2a94e);border-radius:18px;padding:12px;color:#3d2500;border:3px solid #000;box-shadow:0 8px 0 #000;position:relative;overflow:hidden}
+.map-box h2{font-family:'Luckiest Guy';font-size:18px;text-align:center}
+.map-box p{font-size:11px;font-weight:700;text-align:center}
+#treasure{width:100%;height:auto;margin-top:8px;background:#e8c97a;border-radius:12px;border:2px dashed #7a5a1f}
+.route{stroke-dasharray:8 8;animation:dash 1.2s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-32}}
+.map-btns{display:flex;gap:8px;margin-top:8px}
+.map-btns a,.map-btns button{flex:1;text-align:center;border:2px solid #000;border-radius:10px;padding:10px;font-weight:800;text-decoration:none;cursor:pointer;box-shadow:0 4px 0 #000}
+.btn-route{background:#000;color:var(--y)}
+.btn-waze{background:#fff;color:#000}
+.slogans{display:flex;justify-content:space-between;padding:10px 16px 4px;gap:10px}
+.slog{flex:1;background:#111;border:2px solid #333;border-radius:14px;padding:10px;text-align:center;font-family:'Luckiest Guy';font-size:13px;line-height:1.2;transform-style:preserve-3d;box-shadow:0 8px 16px rgba(0,0,0,.5);animation:float 3s ease-in-out infinite}
+.addr{margin:10px 14px;background:#111;border:1px solid #fff;border-radius:12px;padding:10px;text-align:center;font-weight:800}
+.cta{display:block;margin:0 14px 14px;background:#25D366;color:#000;text-align:center;font-weight:800;text-decoration:none;border-radius:14px;padding:16px;border:3px solid #000;box-shadow:0 6px 0 #000;transition:.2s}
+.cta:hover{transform:scale(1.02)}
+.reveal{opacity:0;transform:translateY(24px) scale(.98);transition:.6s}
+.reveal.vis{opacity:1;transform:none}
+.balloon{position:absolute;border-radius:50% 50% 50% 50%/55% 55% 45% 45%;opacity:.9;animation:up 5s ease-in-out infinite;pointer-events:none}
+@keyframes up{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+</style>
+</head>
+<body>
+<canvas id="confetti"></canvas>
+<div class="poster" id="poster">
+<div class="top"><small>BARBEARIA</small><h1>GUI LEIROS</h1><p>ESTILO TAMBÉM SE APRENDE DESDE CEDO</p>
+<div class="pole" style="left:12px"></div><div class="pole" style="right:12px"></div></div>
+
+<div class="hero">
+<div class="festa"><span>F</span><span>E</span><span>S</span><span>T</span><span>A</span></div>
+<div class="das">DAS</div>
+<div class="criancas" style="color:#ffeb3b">CRIANÇAS <span style="background:#ff9800;color:#000;border-radius:10px;padding:0 10px;border:2px solid #000;font-size:28px;vertical-align:middle">2.0</span></div>
+<div class="date3d reveal vis" onclick="boom()"><div style="font-weight:800">📅 DOMINGO 11/10 • A PARTIR DAS</div><b>11/10 - 10H</b><span class="time3d">10H</span></div>
+</div>
+
+<div class="kids">
+<div class="kid-card" id="cardB"><div class="speech">E aí! Vai ter pula-pula! 🤘</div><div class="kid-face">🧒🏽</div><h3>MENINO</h3><p>Corte + diversão<br>Gui Leiros Kids</p><button onclick="talk('cardB')">CHAMAR MENINO</button></div>
+<div class="kid-card" id="cardG"><div class="speech">Uhuul! Algodão-doce! 💖</div><div class="kid-face">👧🏽</div><h3>MENINA</h3><p>Penteado + pintura<br>Gui Leiros Kids</p><button onclick="talk('cardG')">CHAMAR MENINA</button></div>
+</div>
+
+<div class="features" id="featGrid">
+<div class="flip reveal"><div class="flip-inner"><div class="flip-front"><i>🏰</i><span>Brinquedos</span><small style="font-size:9px">toque 👆</small></div><div class="flip-back">Pula-pula, piscina de bolinhas e cama elástica o dia todo!</div></div></div>
+<div class="flip reveal"><div class="flip-inner"><div class="flip-front"><i>🍔</i><span>Comidas Deliciosas</span><small style="font-size:9px">toque 👆</small></div><div class="flip-back">Hot-dog, pipoca, refrigerante e muito lanche grátis!</div></div></div>
+<div class="flip reveal"><div class="flip-inner"><div class="flip-front"><i>🍧</i><span>Algodão Doce</span><small style="font-size:9px">toque 👆</small></div><div class="flip-back">Algodão-doce rosa e azul feito na hora. É só pedir!</div></div></div>
+<div class="flip reveal"><div class="flip-inner"><div class="flip-front"><i>🐯</i><span>Pintura Facial</span><small style="font-size:9px">toque 👆</small></div><div class="flip-back">Vire tigre, borboleta ou super-herói com nossa pintura!</div></div></div>
+<div class="flip reveal"><div class="flip-inner"><div class="flip-front"><i>🍭</i><span>Entrega de Doces</span><small style="font-size:9px">toque 👆</small></div><div class="flip-back">Sacola surpresa com doces para todas as crianças!</div></div></div>
+<div class="flip reveal"><div class="flip-inner"><div class="flip-front"><i>➕</i><span>E muito mais!</span><small style="font-size:9px">toque 👆</small></div><div class="flip-back">Música, sorteios, fotos e alegria garantida!</div></div></div>
+</div>
+
+<p class="copy reveal"><em>UM DIA ESPECIAL PARA NOSSOS PEQUENOS CLIENTES!</em><br><strong>TRAGA A CRIANÇADA E VENHA FAZER PARTE DESSE DIA INCRÍVEL!</strong></p>
+
+<div class="map-box reveal">
+<h2>🗺️ MAPA DO TESOURO — COMO CHEGAR</h2>
+<p>Siga a linha pontilhada até o X! Tesouro = festa!</p>
+<svg id="treasure" viewBox="0 0 400 200">
+<text x="10" y="30" font-size="22">🌳</text><text x="340" y="40" font-size="22">🏠</text><text x="20" y="170" font-size="22">🏫</text>
+<path id="routePath" class="route" d="M40,160 Q100,120 130,100 T220,90 T300,70" fill="none" stroke="#7a1f1f" stroke-width="5" stroke-linecap="round"/>
+<circle id="dot" r="8" fill="#ff1744" stroke="#000" stroke-width="2"/>
+<text x="295" y="75" font-size="28">❌</text>
+<text x="270" y="100" font-size="11" font-weight="800">BARBEARIA AQUI!</text>
+</svg>
+<p id="routeLabel" style="margin-top:4px;background:#000;color:#ffeb00;border-radius:8px;padding:6px">📍 RUA RIBEIRÃO PIRES, 376 - VILA CONDE</p>
+<div class="map-btns">
+<a class="btn-route" href="https://www.google.com/maps/search/?api=1&query=Rua+Ribeir%C3%A3o+Pires+376+Vila+Conde" target="_blank">🧭 TRAÇAR ROTA</a>
+<button class="btn-waze" onclick="animRoute()">▶️ VER CAMINHO</button>
+</div>
+</div>
+
+<div class="slogans">
+<div class="slog reveal">PEQUENOS<br>CLIENTES<br>GRANDES<br>😁 SORRISOS</div>
+<div class="slog reveal" style="animation-delay:.4s">INFÂNCIA<br>TAMBÉM<br>É<br>✂️ ESTILO!</div>
+</div>
+
+<div class="addr">📍 RUA RIBEIRÃO PIRES, 376 <br><small>VILA CONDE</small></div>
+<a class="cta" href="https://wa.me/5511999999999?text=Quero%20confirmar%20presen%C3%A7a%20na%20Festa%20das%20Crian%C3%A7as%202.0!" onclick="boom()">✅ CONFIRMAR PRESENÇA NO WHATSAPP</a>
+</div>
+
+<script>
+// 3D tilt kids
+document.querySelectorAll('.kid-card').forEach(c=>{
+c.addEventListener('mousemove',e=>{
+const r=c.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5;const y=(e.clientY-r.top)/r.height-.5;
+c.style.transform=`rotateY(${x*18}deg) rotateX(${-y*18}deg) scale(1.03)`});
+c.addEventListener('mouseleave',()=>c.style.transform='');
+});
+// flip
+document.querySelectorAll('.flip').forEach(f=>f.addEventListener('click',()=>{f.classList.toggle('flipped');boom(30);}));
+function talk(id){const el=document.getElementById(id);el.classList.add('talk');el.animate([{transform:'translateY(0)'},{transform:'translateY(-16px)'},{transform:'translateY(0)'}],{duration:500});setTimeout(()=>el.classList.remove('talk'),1800);boom(40);}
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}));
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// treasure route animation
+let t=0, playing=false;
+function animRoute(){playing=true;t=0;}
+(function loop(){const p=document.getElementById('routePath');const d=document.getElementById('dot');
+if(p&&d){const L=p.getTotalLength();if(playing){t+=0.008;if(t>=1){t=1;playing=false;boom(80);}const pt=p.getPointAtLength(L*t);d.setAttribute('cx',pt.x);d.setAttribute('cy',pt.y);}else if(!d.getAttribute('cx')){d.setAttribute('cx',40);d.setAttribute('cy',160);}}
+requestAnimationFrame(loop);})();
+// confetti
+const cv=document.getElementById('confetti'),ctx=cv.getContext('2d');let parts=[];
+function size(){cv.width=innerWidth;cv.height=innerHeight}size();addEventListener('resize',size);
+function boom(n=120){const cols=['#ffeb00','#ff1744','#2196f3','#4caf50','#ff4081','#fff'];
+for(let i=0;i<n;i++)parts.push({x:innerWidth/2+(Math.random()-.5)*200,y:innerHeight*0.3,vx:(Math.random()-.5)*10,vy:Math.random()*-7-2,g:.25,s:Math.random()*8+4,c:cols[i%cols.length],r:Math.random()*Math.PI,vr:(Math.random()-.5)*.3,l:100});}
+(function draw(){ctx.clearRect(0,0,cv.width,cv.height);parts=parts.filter(p=>p.l>0);
+parts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=p.g;p.r+=p.vr;p.l--;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.fillStyle=p.c;ctx.fillRect(-p.s/2,-p.s/2,p.s,p.s*0.6);ctx.restore();});
+requestAnimationFrame(draw);})();
+setTimeout(()=>boom(100),600);
+</script>
+</body>
+</html>
