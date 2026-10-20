@@ -2,8 +2,15 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#08080a">
 <title>Gui Leiros — Festa das Crianças 2.0 | 11/10 10H</title>
+<meta name="description" content="Festa das Crianças 2.0 da Barbearia Gui Leiros — domingo 11/10 a partir das 10h, Rua Ribeirão Pires, 376, Vila Conde. Brinquedos, comidas, pintura facial e muita diversão!">
+<meta property="og:title" content="Festa das Crianças 2.0 — Gui Leiros">
+<meta property="og:description" content="Domingo 11/10 a partir das 10h — Rua Ribeirão Pires, 376, Vila Conde. Traga a criançada!">
+<meta property="og:image" content="https://rickdigitalestudio.github.io/festadascriacas2.0guileiros/preview.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%8E%88%3C/text%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Luckiest+Guy&family=Fredoka:wght@500;600;700&family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -22,16 +29,15 @@ background:radial-gradient(800px 400px at 50% -5%,#3a3a45 0%,#0a0a0c 60%),#000}
 .stars span{position:absolute;animation:tw 1.8s ease-in-out infinite}
 @keyframes tw{0%,100%{transform:scale(1) rotate(-10deg);opacity:1}50%{transform:scale(1.4) rotate(10deg);opacity:.7}}
 .festa{font-family:'Luckiest Guy';font-size:66px;line-height:.9;cursor:default}
-.festa span{display:inline-block;-webkit-text-stroke:2px #000;paint-order:stroke fill;transition:.2s;animation:float 2.4s ease-in-out infinite;text-shadow:0 6px 0 #000,0 10px 24px rgba(0,0,0,.6)}
-.festa span:hover{transform:scale(1.25) rotate(-6deg)!important}
+.festa span{display:inline-block;-webkit-text-stroke:2px #000;paint-order:stroke fill;transition:.2s;animation:float 2.4s ease-in-out infinite;text-shadow:0 4px 0 #000,0 8px 0 #06060a,0 14px 26px rgba(0,0,0,.7)}
 .festa span:nth-child(1){color:#ff2e2e;background:linear-gradient(#ff7a7a,#e11);-webkit-background-clip:text;background-clip:text}
 .festa span:nth-child(2){color:#2ea6ff}.festa span:nth-child(3){color:#ffe600}.festa span:nth-child(4){color:#ff4fa0}.festa span:nth-child(5){color:#ff7a1a}
 @keyframes float{0%,100%{translate:0 0}50%{translate:0 -9px}}
-.das{font-family:'Titan One';color:#fff;font-size:22px;-webkit-text-stroke:1.2px #000;text-shadow:2px 2px 0 #000;letter-spacing:.1em}
-.criancas{font-family:'Luckiest Guy';font-size:54px;line-height:1;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:0 6px 0 #000}
+.das{font-family:'Titan One';color:#fff;font-size:22px;-webkit-text-stroke:1.2px #000;text-shadow:2px 2px 0 #000,0 6px 12px rgba(0,0,0,.6);letter-spacing:.1em}
+.criancas{font-family:'Luckiest Guy';font-size:54px;line-height:1;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:0 4px 0 #000,0 8px 0 #06060a,0 14px 24px rgba(0,0,0,.7)}
 .criancas .c1{color:#ffe600}.c2{color:#ff9a00}.c3{color:#5dff5d}.c4{color:#ff5fa2}
 .date3d{margin:10px 14px;background:linear-gradient(180deg,#fff200,#ffcc00);border-radius:18px;padding:10px;color:#000;border:3px solid #000;box-shadow:6px 6px 0 #000;transform:rotate(-2deg)}
-.date3d b{font-family:'Titan One';font-size:50px;color:#ff1744;-webkit-text-stroke:2px #000;line-height:1;text-shadow:2px 2px 0 #000}
+.date3d b{font-family:'Titan One';font-size:50px;color:#ff1744;-webkit-text-stroke:2px #000;line-height:1;text-shadow:2px 2px 0 #000,0 6px 0 rgba(0,0,0,.35)}
 .time3d{background:linear-gradient(180deg,#ff2e5a,#c4002e);color:#ffe600;font-family:'Titan One';font-size:56px;border-radius:14px;padding:0 20px;display:inline-block;border:3px solid #000;box-shadow:0 8px 0 #000;-webkit-text-stroke:1.5px #000}
 .kids{display:flex;gap:12px;padding:12px 12px 4px}
 .kid-card{flex:1;background:linear-gradient(180deg,#2a2a33,#111116);border:2px solid #ffbf00;border-radius:20px;padding:10px 8px;text-align:center;position:relative;box-shadow:0 14px 30px rgba(0,0,0,.6);transition:transform .15s;overflow:hidden}
@@ -69,38 +75,92 @@ background:radial-gradient(800px 400px at 50% -5%,#3a3a45 0%,#0a0a0c 60%),#000}
 .reveal{opacity:0;translate:0 20px;transition:.6s}.reveal.vis{opacity:1;translate:0 0}
 .badge20{position:relative;display:inline-block;font-family:'Titan One';font-size:28px;color:#fff;background:radial-gradient(circle at 30% 30%,#ff4fa0,#7a0050 75%);border:3px solid #000;border-radius:50%;width:76px;height:76px;line-height:70px;text-align:center;vertical-align:middle;box-shadow:0 6px 0 #000,0 0 24px #ff4fa0;transform:rotate(12deg);animation:spin20 3.5s ease-in-out infinite;-webkit-text-stroke:1px #000}
 @keyframes spin20{0%,100%{transform:rotate(12deg) scale(1)}50%{transform:rotate(-8deg) scale(1.12)}}
+
+/* ======================================================
+   CAMADA 3D / INTERATIVA — cena WebGL + profundidade CSS
+   ====================================================== */
+body{overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+#scene{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0;transition:opacity 1.4s ease}
+#scene.on{opacity:1}
+body.no3d #scene{display:none}
+.stage{position:relative;z-index:1;width:100%;max-width:520px;perspective:1300px;perspective-origin:50% 40%;--mx:0px;--my:0px;--sy:0px}
+.poster{will-change:transform;box-shadow:0 30px 90px #000,0 0 46px rgba(255,191,0,.07)}
+body:not(.ready) .poster{opacity:0;transform:translateY(60px) rotateX(-16deg) scale(.95)}
+body.ready .poster{opacity:1;transform:rotateX(0) rotateY(0);transition:opacity .7s ease,transform .95s cubic-bezier(.2,.9,.3,1.25)}
+.depth{translate:calc(var(--mx)*var(--df,0) + var(--sy)*var(--sd,0)) calc(var(--my)*var(--df,0))}
+.reveal{opacity:0;transform:translateY(30px) rotateX(12deg);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.8,.3,1)}
+.reveal.vis{opacity:1;transform:none}
+.festa span{cursor:pointer}
+.festa span:hover{transform:none!important;scale:1.22;rotate:-7deg;filter:drop-shadow(0 10px 14px rgba(255,60,60,.35))}
+.date3d{cursor:pointer;transition:transform .25s cubic-bezier(.2,.8,.3,1),box-shadow .25s}
+.date3d:hover{transform:rotate(-2deg) scale(1.035);box-shadow:8px 10px 0 #000,0 0 26px rgba(255,235,0,.45)}
+.date3d:active{transform:rotate(-2deg) scale(.99)}
+.kid-card{transition:transform .18s ease,box-shadow .3s ease,border-color .3s ease}
+.kid-card:hover{box-shadow:0 20px 44px rgba(0,0,0,.7),0 0 26px rgba(255,191,0,.35)}
+#cardG:hover{box-shadow:0 20px 44px rgba(0,0,0,.7),0 0 26px rgba(255,110,160,.4)}
+.flip{transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .28s cubic-bezier(.2,.8,.3,1);border-radius:18px}
+.flip:focus-visible{outline:3px solid #ffe600;outline-offset:3px}
+.cta{position:relative;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
+.cta:hover{transform:translateY(-3px);box-shadow:0 9px 0 #000,0 0 30px rgba(45,255,122,.5)}
+.cta:active{transform:translateY(3px);box-shadow:0 2px 0 #000}
+.cta::after{content:'';position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:sheen 3.6s ease-in-out infinite;pointer-events:none}
+@keyframes sheen{0%,55%{left:-60%}100%{left:130%}}
+.btn-route,.btn-waze,.kid-card button{transition:transform .15s ease,box-shadow .15s ease}
+.btn-route:hover,.btn-waze:hover,.kid-card button:hover{transform:translateY(-2px)}
+.btn-route:active,.btn-waze:active,.kid-card button:active{transform:translateY(2px);box-shadow:0 1px 0 #000}
+.bubble{position:absolute;left:8px;right:8px;top:8px;z-index:5;background:#fff;color:#111;border:3px solid #000;border-radius:14px;padding:8px 10px;font-family:'Fredoka','Inter',sans-serif;font-weight:700;font-size:12.5px;line-height:1.25;box-shadow:0 5px 0 #000;opacity:0;translate:0 -10px;scale:.85;transform-origin:50% 100%;transition:opacity .2s ease,translate .25s cubic-bezier(.3,1.5,.5,1),scale .25s cubic-bezier(.3,1.5,.5,1);pointer-events:none}
+.bubble::after{content:'';position:absolute;left:50%;bottom:-11px;translate:-50% 0;border:7px solid transparent;border-top-color:#fff;border-bottom:0;filter:drop-shadow(0 3px 0 #000)}
+.bubble.show{opacity:1;translate:0 0;scale:1}
+#dotRing{transform-origin:center;transform-box:fill-box;animation:ringPulse 1.1s ease-out infinite}
+@keyframes ringPulse{0%{transform:scale(.55);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+#sfx{position:fixed;right:12px;bottom:12px;z-index:100;width:48px;height:48px;border-radius:50%;border:3px solid #000;background:linear-gradient(180deg,#fff200,#ffb300);font-size:21px;line-height:1;box-shadow:0 5px 0 #000,0 0 18px rgba(255,200,0,.35);cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
+#sfx:hover{transform:translateY(-2px) scale(1.07)}
+#sfx:active{transform:translateY(3px);box-shadow:0 1px 0 #000}
+#sfx:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){
+*,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+body:not(.ready) .poster{opacity:1!important;transform:none!important}
+.reveal{opacity:1!important;transform:none!important}
+#scene{display:none}
+}
 </style>
+<noscript><style>body:not(.ready) .poster{opacity:1!important;transform:none!important}.reveal{opacity:1!important;transform:none!important}#scene{display:none}</style></noscript>
 </head>
 <body>
-<canvas id="confetti"></canvas>
-<div class="poster">
-<div class="top"><small>BARBEARIA</small><h1>GUI LEIROS</h1><p>ESTILO TAMBÉM SE APRENDE DESDE CEDO</p><div class="pole" style="left:12px"></div><div class="pole" style="right:12px"></div></div>
+<canvas id="scene" aria-hidden="true"></canvas>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<button id="sfx" type="button" aria-pressed="true" title="Desligar os efeitos sonoros">🔊</button>
+<div class="stage" id="stage">
+<div class="poster" id="poster">
+<div class="top depth" style="--df:.4;--sd:.012"><small>BARBEARIA</small><h1>GUI LEIROS</h1><p>ESTILO TAMBÉM SE APRENDE DESDE CEDO</p><div class="pole" style="left:12px"></div><div class="pole" style="right:12px"></div></div>
 <div class="hero">
-<div class="stars"><span style="left:12%;top:10%">⭐</span><span style="right:14%;top:6%">⭐</span><span style="left:6%;top:48%">⭐</span><span style="right:6%;top:52%">⭐</span><span style="left:44%;top:2%">⭐</span></div>
-<div class="festa"><span>F</span><span>E</span><span>S</span><span>T</span><span>A</span></div>
-<div class="das">— DAS —</div>
-<div class="criancas"><span class="c1">CRI</span><span class="c2">AN</span><span class="c3">Ç</span><span class="c4">AS</span> <span class="badge20">2.0</span></div>
-<div class="date3d" onclick="boom(120)"><div style="font-weight:800">📅 DOMINGO 11/10 • A PARTIR DAS</div><b>11/10 - 10H</b><div><span class="time3d">10H</span></div></div>
+<div class="stars depth" style="--df:1.6;--sd:.05"><span style="left:12%;top:10%">⭐</span><span style="right:14%;top:6%">⭐</span><span style="left:6%;top:48%">⭐</span><span style="right:6%;top:52%">⭐</span><span style="left:44%;top:2%">⭐</span></div>
+<div class="festa depth" style="--df:.9;--sd:.03" aria-label="FESTA"><span>F</span><span>E</span><span>S</span><span>T</span><span>A</span></div>
+<div class="das depth" style="--df:.7;--sd:.025">— DAS —</div>
+<div class="criancas depth" style="--df:.9;--sd:.03"><span class="c1">CRI</span><span class="c2">AN</span><span class="c3">Ç</span><span class="c4">AS</span> <span class="badge20">2.0</span></div>
+<div class="date3d depth" style="--df:1.1;--sd:-.02" onclick="pop();boom(120)"><div style="font-weight:800">📅 DOMINGO 11/10 • A PARTIR DAS</div><b>11/10 - 10H</b><div><span class="time3d">10H</span></div></div>
 </div>
 
-<div class="kids">
+<div class="kids reveal depth" style="--df:.5;--sd:.015">
 <div class="kid-card" id="cardB">
+<div class="bubble" role="status" aria-live="polite"></div>
 <div class="portrait">
-<svg viewBox="0 0 130 130"><defs><radialGradient id="skinB" cx="40%" cy="35%"><stop offset="0%" stop-color="#d99a63"/><stop offset="100%" stop-color="#9c5f2c"/></radialGradient><linearGradient id="hairB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2b2b2b"/><stop offset="100%" stop-color="#000"/></linearGradient></defs><circle cx="65" cy="65" r="62" fill="#1e1e28"/><ellipse cx="34" cy="84" rx="7" ry="9" fill="#9c5f2c"/><ellipse cx="96" cy="84" rx="7" ry="9" fill="#9c5f2c"/><ellipse cx="65" cy="76" rx="38" ry="36" fill="url(#skinB)"/><path d="M27 58 Q28 12 65 11 Q102 12 103 58 L96 52 Q94 28 65 26 Q36 28 34 52 Z" fill="url(#hairB)"/><path d="M34 52 Q36 38 50 32 Q42 40 40 52 Z" fill="#444" opacity=".8"/><path d="M96 52 Q94 38 80 32 Q88 40 90 52 Z" fill="#444" opacity=".8"/><rect x="42" y="66" width="16" height="5" rx="2.5" fill="#1a0f0a"/><path d="M72 67 Q80 63 88 67" stroke="#1a0f0a" stroke-width="3.5" fill="none" stroke-linecap="round"/><g class="eye"><ellipse cx="50" cy="80" rx="9" ry="10" fill="#fff"/><circle cx="52" cy="82" r="5" fill="#3a2200"/><circle cx="52" cy="82" r="2.2" fill="#000"/><circle cx="54" cy="80" r="1.6" fill="#fff"/></g><path d="M70 80 Q78 76 86 80" stroke="#000" stroke-width="3.5" fill="none" stroke-linecap="round"/><ellipse cx="42" cy="94" rx="7" ry="4.5" fill="#ff7a8a" opacity=".55"/><ellipse cx="88" cy="94" rx="7" ry="4.5" fill="#ff7a8a" opacity=".55"/><path d="M43 100 Q65 122 87 100 Q76 108 65 108 Q54 108 43 100" fill="#5a1400" stroke="#000" stroke-width="2"/><path d="M46 101 Q65 110 84 101 L80 107 Q65 113 50 107 Z" fill="#fff"/><circle cx="88" cy="102" r="1.5" fill="#fff" opacity=".8"/><path d="M20 112 Q65 126 110 112 L110 130 L20 130 Z" fill="#111"/><path d="M55 112 L65 125 L75 112" fill="none" stroke="#ffcc00" stroke-width="2"/><text x="65" y="122" text-anchor="middle" font-size="8.5" fill="#ffcc00" font-weight="800">GUI LEIROS 👑</text></svg>
+<svg viewBox="0 0 130 130"><defs><radialGradient id="skinB" cx="40%" cy="35%"><stop offset="0%" stop-color="#d99a63"/><stop offset="100%" stop-color="#9c5f2c"/></radialGradient><linearGradient id="hairB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2b2b2b"/><stop offset="100%" stop-color="#000"/></linearGradient></defs><circle cx="65" cy="65" r="62" fill="#1e1e28"/><ellipse cx="34" cy="84" rx="7" ry="9" fill="#9c5f2c"/><ellipse cx="96" cy="84" rx="7" ry="9" fill="#9c5f2c"/><ellipse cx="65" cy="76" rx="38" ry="36" fill="url(#skinB)"/><path d="M27 58 Q28 12 65 11 Q102 12 103 58 L96 52 Q94 28 65 26 Q36 28 34 52 Z" fill="url(#hairB)"/><path d="M34 52 Q36 38 50 32 Q42 40 40 52 Z" fill="#444" opacity=".8"/><path d="M96 52 Q94 38 80 32 Q88 40 90 52 Z" fill="#444" opacity=".8"/><rect x="42" y="66" width="16" height="5" rx="2.5" fill="#1a0f0a"/><path d="M72 67 Q80 63 88 67" stroke="#1a0f0a" stroke-width="3.5" fill="none" stroke-linecap="round"/><g class="eye"><ellipse cx="50" cy="80" rx="9" ry="10" fill="#fff"/><circle cx="52" cy="82" r="5" fill="#3a2200"/><circle class="pupil" cx="52" cy="82" r="2.2" fill="#000"/><circle cx="54" cy="80" r="1.6" fill="#fff"/></g><path d="M70 80 Q78 76 86 80" stroke="#000" stroke-width="3.5" fill="none" stroke-linecap="round"/><ellipse cx="42" cy="94" rx="7" ry="4.5" fill="#ff7a8a" opacity=".55"/><ellipse cx="88" cy="94" rx="7" ry="4.5" fill="#ff7a8a" opacity=".55"/><path d="M43 100 Q65 122 87 100 Q76 108 65 108 Q54 108 43 100" fill="#5a1400" stroke="#000" stroke-width="2"/><path d="M46 101 Q65 110 84 101 L80 107 Q65 113 50 107 Z" fill="#fff"/><circle cx="88" cy="102" r="1.5" fill="#fff" opacity=".8"/><path d="M20 112 Q65 126 110 112 L110 130 L20 130 Z" fill="#111"/><path d="M55 112 L65 125 L75 112" fill="none" stroke="#ffcc00" stroke-width="2"/><text x="65" y="122" text-anchor="middle" font-size="8.5" fill="#ffcc00" font-weight="800">GUI LEIROS 👑</text></svg>
 </div>
 <h3>MENINO</h3><p style="font-size:11px;color:#ccc">Corte + diversão<br>Gui Leiros Kids</p>
-<button onclick="talk('cardB')" style="margin-top:8px;background:#ffe600;border:2px solid #000;border-radius:10px;padding:8px;font-weight:800;box-shadow:0 4px 0 #000;cursor:pointer">CHAMAR MENINO</button>
+<button onclick="talk('cardB')">CHAMAR MENINO</button>
 </div>
 <div class="kid-card" id="cardG" style="border-color:#ff6ea0">
+<div class="bubble" role="status" aria-live="polite"></div>
 <div class="portrait" style="border-color:#ff6ea0">
-<svg viewBox="0 0 130 130"><defs><radialGradient id="skinG" cx="40%" cy="35%"><stop offset="0%" stop-color="#e8ab72"/><stop offset="100%" stop-color="#a86a35"/></radialGradient></defs><circle cx="65" cy="65" r="62" fill="#2a1a2e"/><path d="M12 75 Q8 18 65 14 Q122 18 118 85 Q115 105 108 112 Q108 70 95 48 Q85 30 65 30 Q45 30 35 48 Q22 70 22 112 Q15 105 12 75" fill="#1f0f0a"/><path d="M30 50 Q40 28 65 26 Q90 28 100 50 Q92 34 65 32 Q38 34 30 50" fill="#4a2a15" opacity=".9"/><ellipse cx="65" cy="76" rx="36" ry="34" fill="url(#skinG)"/><ellipse cx="50" cy="77" rx="9.5" ry="10.5" fill="#fff"/><ellipse cx="80" cy="77" rx="9.5" ry="10.5" fill="#fff"/><g class="eye"><circle cx="52" cy="79" r="5.5" fill="#4a2600"/><circle cx="52" cy="79" r="2.5" fill="#000"/><circle cx="54" cy="77" r="1.8" fill="#fff"/></g><g class="eye"><circle cx="78" cy="79" r="5.5" fill="#4a2600"/><circle cx="78" cy="79" r="2.5" fill="#000"/><circle cx="80" cy="77" r="1.8" fill="#fff"/></g><path d="M40 69 Q50 66 60 69" stroke="#000" stroke-width="2" fill="none"/><path d="M70 69 Q80 66 90 69" stroke="#000" stroke-width="2" fill="none"/><path d="M38 67 L34 64 M42 66 L39 62" stroke="#000" stroke-width="1.8" stroke-linecap="round"/><path d="M88 66 L91 62 M92 67 L96 64" stroke="#000" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="43" cy="92" rx="8" ry="5" fill="#ff7a9a" opacity=".6"/><ellipse cx="87" cy="92" rx="8" ry="5" fill="#ff7a9a" opacity=".6"/><g transform="translate(94,86) scale(.9)"><ellipse cx="0" cy="-4" rx="5" ry="7" fill="#c084fc" stroke="#6d28d9" stroke-width="1"/><ellipse cx="0" cy="5" rx="4" ry="5" fill="#f0abfc" stroke="#6d28d9" stroke-width="1"/><circle cx="0" cy="0" r="1.8" fill="#000"/></g><path d="M50 100 Q65 115 80 100 Q72 107 65 107 Q58 107 50 100" fill="#6b1000" stroke="#000" stroke-width="2"/><path d="M52 101 Q65 108 78 101 L75 106 Q65 110 55 106 Z" fill="#fff"/><path d="M88 14 L100 2 L104 18 L120 24 L106 32 L102 48 L90 36 L74 32 L86 20 Z" fill="#ff5fa2" stroke="#000" stroke-width="2.2"/><circle cx="97" cy="26" r="4" fill="#ff9ec6" stroke="#000" stroke-width="1.5"/><circle cx="90" cy="20" r="1.5" fill="#fff"/><circle cx="104" cy="24" r="1.5" fill="#fff"/><path d="M20 113 Q65 127 110 113 L110 130 L20 130 Z" fill="#ff4f9a"/><text x="65" y="123" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="800">GUI LEIROS 👑</text></svg>
+<svg viewBox="0 0 130 130"><defs><radialGradient id="skinG" cx="40%" cy="35%"><stop offset="0%" stop-color="#e8ab72"/><stop offset="100%" stop-color="#a86a35"/></radialGradient></defs><circle cx="65" cy="65" r="62" fill="#2a1a2e"/><path d="M12 75 Q8 18 65 14 Q122 18 118 85 Q115 105 108 112 Q108 70 95 48 Q85 30 65 30 Q45 30 35 48 Q22 70 22 112 Q15 105 12 75" fill="#1f0f0a"/><path d="M30 50 Q40 28 65 26 Q90 28 100 50 Q92 34 65 32 Q38 34 30 50" fill="#4a2a15" opacity=".9"/><ellipse cx="65" cy="76" rx="36" ry="34" fill="url(#skinG)"/><ellipse cx="50" cy="77" rx="9.5" ry="10.5" fill="#fff"/><ellipse cx="80" cy="77" rx="9.5" ry="10.5" fill="#fff"/><g class="eye"><circle cx="52" cy="79" r="5.5" fill="#4a2600"/><circle class="pupil" cx="52" cy="79" r="2.5" fill="#000"/><circle cx="54" cy="77" r="1.8" fill="#fff"/></g><g class="eye"><circle cx="78" cy="79" r="5.5" fill="#4a2600"/><circle class="pupil" cx="78" cy="79" r="2.5" fill="#000"/><circle cx="80" cy="77" r="1.8" fill="#fff"/></g><path d="M40 69 Q50 66 60 69" stroke="#000" stroke-width="2" fill="none"/><path d="M70 69 Q80 66 90 69" stroke="#000" stroke-width="2" fill="none"/><path d="M38 67 L34 64 M42 66 L39 62" stroke="#000" stroke-width="1.8" stroke-linecap="round"/><path d="M88 66 L91 62 M92 67 L96 64" stroke="#000" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="43" cy="92" rx="8" ry="5" fill="#ff7a9a" opacity=".6"/><ellipse cx="87" cy="92" rx="8" ry="5" fill="#ff7a9a" opacity=".6"/><g transform="translate(94,86) scale(.9)"><ellipse cx="0" cy="-4" rx="5" ry="7" fill="#c084fc" stroke="#6d28d9" stroke-width="1"/><ellipse cx="0" cy="5" rx="4" ry="5" fill="#f0abfc" stroke="#6d28d9" stroke-width="1"/><circle cx="0" cy="0" r="1.8" fill="#000"/></g><path d="M50 100 Q65 115 80 100 Q72 107 65 107 Q58 107 50 100" fill="#6b1000" stroke="#000" stroke-width="2"/><path d="M52 101 Q65 108 78 101 L75 106 Q65 110 55 106 Z" fill="#fff"/><path d="M88 14 L100 2 L104 18 L120 24 L106 32 L102 48 L90 36 L74 32 L86 20 Z" fill="#ff5fa2" stroke="#000" stroke-width="2.2"/><circle cx="97" cy="26" r="4" fill="#ff9ec6" stroke="#000" stroke-width="1.5"/><circle cx="90" cy="20" r="1.5" fill="#fff"/><circle cx="104" cy="24" r="1.5" fill="#fff"/><path d="M20 113 Q65 127 110 113 L110 130 L20 130 Z" fill="#ff4f9a"/><text x="65" y="123" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="800">GUI LEIROS 👑</text></svg>
 </div>
 <h3>MENINA</h3><p style="font-size:11px;color:#ccc">Penteado + pintura<br>Gui Leiros Kids</p>
-<button onclick="talk('cardG')" style="margin-top:8px;background:#ff6ea0;color:#fff;border:2px solid #000;border-radius:10px;padding:8px;font-weight:800;box-shadow:0 4px 0 #000;cursor:pointer">CHAMAR MENINA</button>
+<button onclick="talk('cardG')">CHAMAR MENINA</button>
 </div>
 </div>
 
-<div class="features">
+<div class="features reveal depth" style="--df:.4;--sd:.012;transition-delay:.08s">
 <div class="flip"><div class="flip-inner"><div class="flip-front"><div class="icon3d" style="background:radial-gradient(circle at 30% 30%,#fff,#4aa3ff,#0a3d91)">🏰</div><span>BRINQUEDOS</span></div><div class="flip-back">Pula-pula, piscina de bolinhas e cama elástica o dia todo!</div></div></div>
 <div class="flip"><div class="flip-inner"><div class="flip-front"><div class="icon3d" style="background:radial-gradient(circle at 30% 30%,#fff,#ff8a3d,#a33a00)">🍔</div><span>COMIDAS DELICIOSAS</span></div><div class="flip-back">Hot-dog, pipoca, refrigerante e muito lanche grátis!</div></div></div>
 <div class="flip"><div class="flip-inner"><div class="flip-front"><div class="icon3d" style="background:radial-gradient(circle at 30% 30%,#fff,#ff9ec6,#b0005a)">🍧</div><span>ALGODÃO DOCE</span></div><div class="flip-back">Algodão-doce rosa e azul feito na hora!</div></div></div>
@@ -109,28 +169,250 @@ background:radial-gradient(800px 400px at 50% -5%,#3a3a45 0%,#0a0a0c 60%),#000}
 <div class="flip"><div class="flip-inner"><div class="flip-front"><div class="icon3d" style="background:radial-gradient(circle at 30% 30%,#fff,#ffeb00,#b89b00)">➕</div><span>E MUITO MAIS!</span></div><div class="flip-back">Música, sorteios, fotos e alegria!</div></div></div>
 </div>
 
-<p class="copy"><em>UM DIA ESPECIAL PARA NOSSOS PEQUENOS CLIENTES!</em><br><strong>TRAGA A CRIANÇADA E VENHA FAZER PARTE DESSE DIA INCRÍVEL!</strong></p>
+<p class="copy reveal"><em>UM DIA ESPECIAL PARA NOSSOS PEQUENOS CLIENTES!</em><br><strong>TRAGA A CRIANÇADA E VENHA FAZER PARTE DESSE DIA INCRÍVEL!</strong></p>
 
-<div class="map-box"><h2>🗺️ MAPA DO TESOURO — COMO CHEGAR</h2><p>Siga a linha pontilhada até o X! Tesouro = festa!</p>
-<svg id="treasure" viewBox="0 0 400 200"><text x="10" y="30" font-size="22">🌳</text><text x="340" y="40" font-size="22">🏠</text><path id="routePath" d="M40,160 Q100,120 130,100 T220,90 T300,70" fill="none" stroke="#7a1f1f" stroke-width="5" stroke-dasharray="8 8" stroke-linecap="round"/><circle id="dot" r="9" fill="#ff1744" stroke="#000" stroke-width="2" cx="40" cy="160"/><text x="295" y="70" font-size="30">❌</text><text x="265" y="100" font-size="12" font-weight="800">BARBEARIA AQUI!</text></svg>
+<div class="map-box reveal depth" style="--df:.35;--sd:.01"><h2>🗺️ MAPA DO TESOURO — COMO CHEGAR</h2><p>Siga a linha pontilhada até o X! Tesouro = festa!</p>
+<svg id="treasure" viewBox="0 0 400 200"><text x="10" y="30" font-size="22">🌳</text><text x="340" y="40" font-size="22">🏠</text><path id="routePath" d="M40,160 Q100,120 130,100 T220,90 T300,70" fill="none" stroke="#7a1f1f" stroke-width="5" stroke-dasharray="8 8" stroke-linecap="round"/><circle id="dotRing" r="9" fill="#ff1744" opacity=".5" cx="40" cy="160"/><circle id="dot" r="9" fill="#ff1744" stroke="#000" stroke-width="2" cx="40" cy="160"/><text x="295" y="70" font-size="30">❌</text><text x="265" y="100" font-size="12" font-weight="800">BARBEARIA AQUI!</text></svg>
 <p style="margin-top:4px;background:#000;color:#ffeb00;border-radius:8px;padding:6px;font-size:12px;font-weight:800">📍 RUA RIBEIRÃO PIRES, 376 - VILA CONDE</p>
-<div class="map-btns"><a class="btn-route" href="https://www.google.com/maps/search/?api=1&query=Rua+Ribeir%C3%A3o+Pires+376+Vila+Conde" target="_blank">🧭 TRAÇAR ROTA</a><button class="btn-waze" onclick="animRoute()">▶️ VER CAMINHO</button></div></div>
+<div class="map-btns"><a class="btn-route" href="https://www.google.com/maps/search/?api=1&query=Rua+Ribeir%C3%A3o+Pires+376+Vila+Conde" target="_blank" rel="noopener">🧭 TRAÇAR ROTA</a><button class="btn-waze" onclick="animRoute()">▶️ VER CAMINHO</button></div></div>
 
-<div class="slogans"><div class="slog">PEQUENOS<br>CLIENTES<br>GRANDES<br>😁 SORRISOS</div><div class="slog">INFÂNCIA<br>TAMBÉM<br>É<br>✂️ ESTILO!</div></div>
-<div class="addr">📍 RUA RIBEIRÃO PIRES, 376 <br><small>VILA CONDE</small></div>
-<a class="cta" href="https://wa.me/5511972179204?text=Ol%C3%A1!%20Quero%20confirmar%20presen%C3%A7a%20na%20Festa%20das%20Crian%C3%A7as%202.0%20Gui%20Leiros!%20Dia%2011%2F10%20a%20partir%20das%2010h" onclick="boom(150)">✅ CONFIRMAR PRESENÇA NO WHATSAPP<br><small>(11) 97217-9204</small></a>
+<div class="slogans reveal depth" style="--df:.45;--sd:.014"><div class="slog">PEQUENOS<br>CLIENTES<br>GRANDES<br>😁 SORRISOS</div><div class="slog">INFÂNCIA<br>TAMBÉM<br>É<br>✂️ ESTILO!</div></div>
+<div class="addr reveal">📍 RUA RIBEIRÃO PIRES, 376 <br><small>VILA CONDE</small></div>
+<a class="cta reveal depth" style="--df:.6;--sd:-.01" href="https://wa.me/5511972179204?text=Ol%C3%A1!%20Quero%20confirmar%20presen%C3%A7a%20na%20Festa%20das%20Crian%C3%A7as%202.0%20Gui%20Leiros!%20Dia%2011%2F10%20a%20partir%20das%2010h" onclick="boom(150)">✅ CONFIRMAR PRESENÇA NO WHATSAPP<br><small>(11) 97217-9204</small></a>
+</div>
 </div>
 <script>
-document.querySelectorAll('.kid-card').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5;const y=(e.clientY-r.top)/r.height-.5;c.style.transform=`rotateY(${x*16}deg) rotateX(${-y*16}deg)`});c.addEventListener('mouseleave',()=>c.style.transform='')});
-document.querySelectorAll('.flip').forEach(f=>f.addEventListener('click',()=>{f.classList.toggle('flipped');boom(40)}));
-function talk(id){document.getElementById(id).animate([{transform:'translateY(0)'},{transform:'translateY(-14px)'},{transform:'translateY(0)'}],{duration:500});boom(60);}
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}));document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-let t=0,playing=false;function animRoute(){playing=true;t=0;}
-(function loop(){const p=document.getElementById('routePath'),d=document.getElementById('dot');if(p&&d){const L=p.getTotalLength();if(playing){t+=0.01;if(t>=1){t=1;playing=false;boom(100)}const pt=p.getPointAtLength(L*t);d.setAttribute('cx',pt.x);d.setAttribute('cy',pt.y);}}requestAnimationFrame(loop)})();
-const cv=document.getElementById('confetti'),ctx=cv.getContext('2d');let parts=[];function size(){cv.width=innerWidth;cv.height=innerHeight}size();addEventListener('resize',size);
-function boom(n=120){const cols=['#ffeb00','#ff1744','#2196f3','#4caf50','#ff4081','#fff'];for(let i=0;i<n;i++)parts.push({x:innerWidth/2+(Math.random()-.5)*220,y:innerHeight*0.3,vx:(Math.random()-.5)*10,vy:Math.random()*-7-2,g:.25,s:Math.random()*8+4,c:cols[i%cols.length],r:Math.random()*3,vr:(Math.random()-.5)*.3,l:110});}
+/* ================= SOM (Web Audio, sem arquivos) ================= */
+let actx=null,muted=localStorage.getItem('gl-mute')==='1';
+const sfxBtn=document.getElementById('sfx');
+function ac(){try{if(!actx)actx=new (window.AudioContext||window.webkitAudioContext)();if(actx.state==='suspended')actx.resume()}catch(e){}return actx}
+function tone(f,f2,dur,type,vol){if(muted)return;const c=ac();if(!c)return;const t0=c.currentTime,o=c.createOscillator(),g=c.createGain();o.type=type;o.frequency.setValueAtTime(f,t0);o.frequency.exponentialRampToValueAtTime(Math.max(f2,1),t0+dur);g.gain.setValueAtTime(vol,t0);g.gain.exponentialRampToValueAtTime(.0001,t0+dur);o.connect(g);g.connect(c.destination);o.start(t0);o.stop(t0+dur+.02)}
+function pop(){tone(880,150,.14,'triangle',.25)}
+function flipSnd(){tone(240,720,.13,'square',.08)}
+function cheer(){[523,659,784,1047].forEach((f,i)=>setTimeout(()=>tone(f,f,.16,'square',.12),i*95))}
+function updSfx(){sfxBtn.textContent=muted?'🔇':'🔊';sfxBtn.setAttribute('aria-pressed',String(!muted));sfxBtn.title=muted?'Ligar os efeitos sonoros':'Desligar os efeitos sonoros'}
+sfxBtn.addEventListener('click',()=>{muted=!muted;localStorage.setItem('gl-mute',muted?'1':'0');updSfx();if(!muted)tone(660,990,.12,'triangle',.14)});
+updSfx();
+
+/* ================= CONFETE 2D ================= */
+const cv=document.getElementById('confetti'),ctx=cv.getContext('2d');
+let parts=[];
+const COLS=['#ffeb00','#ff1744','#2196f3','#4caf50','#ff4081','#fff','#ff7a1a'];
+function size(){cv.width=innerWidth;cv.height=innerHeight}
+size();addEventListener('resize',size,{passive:true});
+function boom(n,x,y){n=n||120;x=x==null?innerWidth/2:x;y=y==null?innerHeight*.3:y;
+for(let i=0;i<n;i++)parts.push({x:x+(Math.random()-.5)*60,y:y+(Math.random()-.5)*40,vx:(Math.random()-.5)*11,vy:Math.random()*-7-1,g:.26,s:Math.random()*8+4,c:COLS[i%COLS.length],r:Math.random()*3,vr:(Math.random()-.5)*.32,l:120});
+if(parts.length>900)parts.splice(0,parts.length-900)}
+window.boom=boom;window.pop=pop;
 (function draw(){ctx.clearRect(0,0,cv.width,cv.height);parts=parts.filter(p=>p.l>0);parts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=p.g;p.r+=p.vr;p.l--;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.fillStyle=p.c;ctx.fillRect(-p.s/2,-p.s/2,p.s,p.s*.6);ctx.restore()});requestAnimationFrame(draw)})();
-setTimeout(()=>boom(120),600);
+
+/* ================= FLIP DO CARTEAZ 3D + PARALAXE ================= */
+const poster=document.getElementById('poster'),stage=document.getElementById('stage');
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const hoverable=matchMedia('(hover:hover) and (pointer:fine)').matches;
+let mx=0,my=0,tmx=0,tmy=0,introDone=false,scrollTick=false;
+if(hoverable&&!reduced)addEventListener('pointermove',e=>{tmx=e.clientX/innerWidth-.5;tmy=e.clientY/innerHeight-.5},{passive:true});
+function onScroll(){const r=poster.getBoundingClientRect();const oy=Math.min(Math.max(innerHeight/2-r.top,60),Math.max(r.height-60,60));stage.style.perspectiveOrigin='50% '+oy.toFixed(0)+'px';stage.style.setProperty('--sy',(window.scrollY||0).toFixed(0)+'px');scrollTick=false}
+addEventListener('scroll',()=>{if(!scrollTick){scrollTick=true;requestAnimationFrame(onScroll)}},{passive:true});
+addEventListener('resize',onScroll,{passive:true});
+(function loop(){mx+=(tmx-mx)*.06;my+=(tmy-my)*.06;
+stage.style.setProperty('--mx',(-mx*16).toFixed(2)+'px');stage.style.setProperty('--my',(-my*12).toFixed(2)+'px');
+if(introDone&&!reduced)poster.style.transform='rotateX('+(-my*7).toFixed(2)+'deg) rotateY('+(mx*8).toFixed(2)+'deg)';
+requestAnimationFrame(loop)})();
+setTimeout(()=>{document.body.classList.add('ready')},40);
+setTimeout(()=>{poster.style.transition='none';introDone=true;onScroll();},reduced?120:1200);
+setTimeout(()=>boom(170),700);
+
+/* ================= REVEAL NA ROLAGEM ================= */
+const revs=[].slice.call(document.querySelectorAll('.reveal'));
+if('IntersectionObserver' in window&&!reduced){
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}}),{threshold:.12});
+revs.forEach(el=>io.observe(el));
+}else revs.forEach(el=>el.classList.add('vis'));
+
+/* ================= CARDS 3D + OLHOS QUE ACOMPANHAM ================= */
+[].slice.call(document.querySelectorAll('.kid-card')).forEach(c=>{
+c.addEventListener('pointermove',e=>{if(!hoverable)return;const r=c.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(800px) rotateY('+(x*18).toFixed(1)+'deg) rotateX('+(-y*18).toFixed(1)+'deg)'});
+c.addEventListener('pointerleave',()=>c.style.transform='');
+});
+if(hoverable){
+const faces=[].slice.call(document.querySelectorAll('.kid-card svg')).map(s=>({svg:s,pupils:[].slice.call(s.querySelectorAll('.pupil'))}));
+addEventListener('pointermove',e=>{faces.forEach(f=>{const r=f.svg.getBoundingClientRect();if(!r.width)return;
+const dx=Math.max(-1,Math.min(1,(e.clientX-(r.left+r.width/2))/(r.width/2)));
+const dy=Math.max(-1,Math.min(1,(e.clientY-(r.top+r.height/2))/(r.height/2)));
+f.pupils.forEach(p=>{p.style.transform='translate('+(dx*2.6).toFixed(2)+'px,'+(dy*2.2).toFixed(2)+'px)'})})},{passive:true});
+}
+
+/* ================= BALÕES FALANTES ================= */
+const PHRASES={cardB:['Bora cortar! ✂️','Cabeça de rei, hein! 👑','Tô pronto pra festa! 🎈','Primeira fileira, é! 💈'],cardG:['Vou de trança! 💇‍♀️','Pintura de borboleta! 🦋','Cabelo arrasado! ✨','Pronta pra festa! 🎀']};
+function talk(id){
+const card=document.getElementById(id);if(!card)return;
+const b=card.querySelector('.bubble');
+if(b){const list=PHRASES[id]||[];b.textContent=list[Math.floor(Math.random()*list.length)]||'';b.classList.add('show');clearTimeout(b._t);b._t=setTimeout(()=>b.classList.remove('show'),2800)}
+if(!reduced)card.animate([{transform:'translateY(0) rotateY(0)'},{transform:'translateY(-16px) rotateY(-8deg) scale(1.03)'},{transform:'translateY(0) rotateY(0)'}],{duration:560,easing:'cubic-bezier(.3,.9,.4,1.2)'});
+boom(70);pop()}
+window.talk=talk;
+
+/* ================= CARDS QUE VIRAM (flip) ================= */
+[].slice.call(document.querySelectorAll('.flip')).forEach(f=>{
+f.tabIndex=0;f.setAttribute('role','button');
+const lb=f.querySelector('.flip-front span');
+f.setAttribute('aria-label',(lb?lb.textContent:'Detalhes')+' — ativar para ver mais');
+f.setAttribute('aria-pressed','false');
+function act(){f.classList.toggle('flipped');const on=f.classList.contains('flipped');f.setAttribute('aria-pressed',String(on));boom(on?60:25);on?flipSnd():pop()}
+f.addEventListener('click',act);
+f.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();act()}});
+f.addEventListener('pointermove',e=>{if(!hoverable)return;const r=f.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;f.style.setProperty('--ry',(x*16).toFixed(1)+'deg');f.style.setProperty('--rx',(-y*16).toFixed(1)+'deg')});
+f.addEventListener('pointerleave',()=>{f.style.setProperty('--ry','0deg');f.style.setProperty('--rx','0deg')});
+});
+
+/* ================= LETRAS DA FESTA ================= */
+[].slice.call(document.querySelectorAll('.festa span')).forEach(s=>{
+s.addEventListener('click',e=>{if(!reduced)s.animate([{scale:'1'},{scale:'1.4',rotate:'-10deg'},{scale:'1'}],{duration:620,easing:'cubic-bezier(.3,.9,.4,1.3)'});pop();boom(26,e.clientX,e.clientY)});
+});
+
+/* ================= MAPA DO TESOURO ================= */
+let t=0,playing=false;
+function animRoute(){playing=true;t=0;flipSnd()}
+window.animRoute=animRoute;
+const route=document.getElementById('routePath'),dot=document.getElementById('dot'),ring=document.getElementById('dotRing');
+(function routeLoop(){if(route&&dot){const L=route.getTotalLength();
+if(playing){t+=.008;if(t>=1){t=1;playing=false;boom(110);cheer()}
+const pt=route.getPointAtLength(L*t);
+dot.setAttribute('cx',pt.x);dot.setAttribute('cy',pt.y);
+if(ring){ring.setAttribute('cx',pt.x);ring.setAttribute('cy',pt.y)}}}requestAnimationFrame(routeLoop)})();
+
+/* ================= TOQUE EM QUALQUER LUGAR: BALÃO OU CONFETE ================= */
+window.addEventListener('pointerdown',e=>{
+if(e.target.closest('a,button,.flip,.kid-card,.date3d,.map-box,.festa span,#sfx'))return;
+let hit=false;
+try{if(typeof window.balloonHit==='function')hit=window.balloonHit(e.clientX,e.clientY)}catch(err){}
+if(!hit)boom(26,e.clientX,e.clientY);
+},{passive:true});
+</script>
+<script type="module">
+/* ================= CENA 3D DE FUNDO (Three.js) ================= */
+(async()=>{
+const body=document.body;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){body.classList.add('no3d');return}
+let T;
+try{T=await import('https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.min.js')}
+catch(e){console.warn('Three.js não carregou — usando modo 2D.',e);body.classList.add('no3d');return}
+try{
+const canvas=document.getElementById('scene');
+const low=innerWidth<768||(navigator.deviceMemory&&navigator.deviceMemory<=4);
+const renderer=new T.WebGLRenderer({canvas,alpha:true,antialias:!low,powerPreference:'high-performance'});
+renderer.setPixelRatio(Math.min(devicePixelRatio||1,low?1.5:2));
+renderer.setSize(innerWidth,innerHeight,false);
+const scene=new T.Scene();
+const camera=new T.PerspectiveCamera(55,innerWidth/innerHeight,.1,120);
+camera.position.set(0,0,17);
+scene.add(new T.AmbientLight(0xffffff,1.6));
+const key=new T.DirectionalLight(0xffffff,2.8);key.position.set(6,10,8);scene.add(key);
+const rim=new T.DirectionalLight(0xff6ea0,1.8);rim.position.set(-9,-5,5);scene.add(rim);
+const cursorLight=new T.PointLight(0xffd47a,240,50,2);cursorLight.position.set(0,0,11);scene.add(cursorLight);
+
+const COLORS=[0xff2e2e,0x2ea6ff,0xffe600,0xff4fa0,0xff7a1a,0x5dff5d,0xffffff];
+const balloons=[],targets=[];
+
+function makeBalloon(color){
+const g=new T.Group();
+const mat=new T.MeshStandardMaterial({color,roughness:.22,metalness:.18,emissive:color,emissiveIntensity:.16});
+const bodyMesh=new T.Mesh(new T.SphereGeometry(1,22,18),mat);bodyMesh.scale.set(1,1.22,1);g.add(bodyMesh);
+const knot=new T.Mesh(new T.ConeGeometry(.13,.24,8),mat);knot.position.y=-1.28;knot.rotation.x=Math.PI;g.add(knot);
+const str=new T.Mesh(new T.CylinderGeometry(.015,.015,2.4,4),new T.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:.55}));str.position.y=-2.5;g.add(str);
+bodyMesh.userData.root=g;targets.push(bodyMesh);
+return g}
+function makeGift(color){
+const g=new T.Group();
+const box=new T.Mesh(new T.BoxGeometry(1.5,1.2,1.5),new T.MeshStandardMaterial({color,roughness:.45,metalness:.05}));
+const rib=new T.MeshStandardMaterial({color:0xffd47a,roughness:.3,metalness:.35});
+const r1=new T.Mesh(new T.BoxGeometry(.3,1.24,1.54),rib);
+const r2=new T.Mesh(new T.BoxGeometry(1.54,1.24,.3),rib);
+g.add(box,r1,r2);return g}
+
+const nB=low?10:16;
+for(let i=0;i<nB;i++){
+const g=makeBalloon(COLORS[i%COLORS.length]);
+const side=i%2?1:-1;
+g.position.set(side*(5.5+Math.random()*8),-7+Math.random()*14,-8+Math.random()*9);
+g.scale.setScalar(.85+Math.random()*.7);
+g.userData={base:g.position.clone(),ph:Math.random()*6.28,sp:.45+Math.random()*.55,amp:.5+Math.random()*.7,dead:false};
+scene.add(g);balloons.push(g)}
+const gifts=[];
+const nG=low?4:8;
+for(let i=0;i<nG;i++){
+const g=makeGift(COLORS[(i+3)%COLORS.length]);
+const side=i%2?1:-1;
+g.position.set(side*(5+Math.random()*9),-6+Math.random()*12,-9+Math.random()*8);
+g.scale.setScalar(.7+Math.random()*.5);
+g.userData={base:g.position.clone(),ph:Math.random()*6.28,sp:.5+Math.random()*.6};
+scene.add(g);gifts.push(g)}
+
+const nC=low?90:170;
+const conf=new T.InstancedMesh(new T.PlaneGeometry(.3,.2),new T.MeshBasicMaterial({side:T.DoubleSide}),nC);
+const dummy=new T.Object3D(),parts=[];
+for(let i=0;i<nC;i++){
+parts.push({x:(Math.random()-.5)*32,y:(Math.random()-.5)*24,z:-10+Math.random()*13,v:.9+Math.random()*1.6,w:(Math.random()-.5)*.9,rx:Math.random()*6.28,ry:Math.random()*6.28,rz:Math.random()*6.28,vr:(Math.random()-.5)*3,sc:.7+Math.random()*.9});
+conf.setColorAt(i,new T.Color(COLORS[i%COLORS.length]))}
+if(conf.instanceColor)conf.instanceColor.needsUpdate=true;
+conf.instanceMatrix.setUsage(T.DynamicDrawUsage);
+scene.add(conf);
+
+const cv3=document.createElement('canvas');cv3.width=cv3.height=64;
+const cx3=cv3.getContext('2d');
+const grd=cx3.createRadialGradient(32,32,0,32,32,32);
+grd.addColorStop(0,'rgba(255,255,255,1)');grd.addColorStop(.35,'rgba(255,230,120,.75)');grd.addColorStop(1,'rgba(255,255,255,0)');
+cx3.fillStyle=grd;cx3.fillRect(0,0,64,64);
+const sparkTex=new T.CanvasTexture(cv3);sparkTex.colorSpace=T.SRGBColorSpace;
+const nS=low?120:240;
+const sPos=new Float32Array(nS*3);
+for(let i=0;i<nS;i++){sPos[i*3]=(Math.random()-.5)*40;sPos[i*3+1]=(Math.random()-.5)*26;sPos[i*3+2]=-12+Math.random()*14}
+const sGeo=new T.BufferGeometry();sGeo.setAttribute('position',new T.BufferAttribute(sPos,3));
+const sparkMat=new T.PointsMaterial({size:.55,map:sparkTex,transparent:true,depthWrite:false,blending:T.AdditiveBlending,opacity:.85});
+const sparks=new T.Points(sGeo,sparkMat);scene.add(sparks);
+
+const ray=new T.Raycaster(),ndc=new T.Vector2(),pops=[];
+function killBalloon(g,ex,ey){
+if(!g||g.userData.dead)return;
+g.userData.dead=true;pops.push({g,t:0,s0:g.scale.x});
+if(window.boom)window.boom(45,ex,ey);
+if(window.pop)window.pop();
+setTimeout(()=>{g.position.set((Math.random()<.5?-1:1)*(5.5+Math.random()*8),-7+Math.random()*14,-8+Math.random()*9);g.userData.base.copy(g.position);g.visible=true;g.userData.dead=false},2600)}
+window.balloonHit=(x,y)=>{
+ndc.set((x/innerWidth)*2-1,-((y/innerHeight)*2-1));
+ray.setFromCamera(ndc,camera);
+const hits=ray.intersectObjects(targets,false);
+if(!hits.length)return false;
+killBalloon(hits[0].object.userData.root,x,y);
+return true};
+
+let tmx=0,tmy=0,mx=0,my=0,scrollPx=0;
+addEventListener('pointermove',e=>{tmx=e.clientX/innerWidth-.5;tmy=e.clientY/innerHeight-.5},{passive:true});
+addEventListener('scroll',()=>{scrollPx=window.scrollY||0},{passive:true});
+addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight,false);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix()},{passive:true});
+
+const clock=new T.Clock();
+(function frame(){
+const dt=Math.min(clock.getDelta(),.06),tt=clock.elapsedTime;
+mx+=(tmx-mx)*.05;my+=(tmy-my)*.05;
+const sN=Math.min(scrollPx*.0035,7);
+camera.position.x=mx*3.4;camera.position.y=-my*2.6-sN;
+camera.lookAt(0,camera.position.y*.3,0);
+cursorLight.position.x=mx*16;cursorLight.position.y=-my*11+2;
+balloons.forEach(g=>{const u=g.userData;if(u.dead)return;g.position.y=u.base.y+Math.sin(tt*u.sp+u.ph)*u.amp;g.rotation.z=Math.sin(tt*.8+u.ph)*.18});
+gifts.forEach(g=>{const u=g.userData;g.rotation.x+=dt*.45;g.rotation.y+=dt*.6;g.position.y=u.base.y+Math.sin(tt*u.sp+u.ph)*.6});
+for(let i=0;i<pops.length;i++){const p=pops[i];p.t+=dt*4;p.g.scale.setScalar(Math.max(0,p.s0*(1-p.t)));p.g.rotation.z+=dt*6}
+for(let i=pops.length-1;i>=0;i--)if(pops[i].t>=1){pops[i].g.visible=false;pops.splice(i,1)}
+for(let i=0;i<nC;i++){const p=parts[i];p.y-=p.v*dt*2.2;p.x+=Math.sin(tt*1.4+i)*p.w*dt;if(p.y<-13){p.y=13;p.x=(Math.random()-.5)*32}p.rx+=p.vr*dt;p.ry+=p.vr*.7*dt;dummy.position.set(p.x,p.y,p.z);dummy.rotation.set(p.rx,p.ry,p.rz);dummy.scale.setScalar(p.sc);dummy.updateMatrix();conf.setMatrixAt(i,dummy.matrix)}
+conf.instanceMatrix.needsUpdate=true;
+sparkMat.opacity=.55+Math.sin(tt*2.1)*.3;
+sparks.rotation.z=tt*.012;
+renderer.render(scene,camera);
+requestAnimationFrame(frame)})();
+canvas.classList.add('on');
+}catch(err){console.warn('Erro na cena 3D:',err);body.classList.add('no3d')}
+})();
 </script>
 </body>
 </html>
